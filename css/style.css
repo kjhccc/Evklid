@@ -254,7 +254,7 @@ header{
 .about_link{
   display: flex;
   align-items: flex-end;
-  background-image: url(/img/worker.jpg);
+  background-image: url(img/worker.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
