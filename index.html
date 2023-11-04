@@ -12,24 +12,27 @@
     <div class="header">
      <div class="container">
       <div class="wraper__header">
+          <span class="burger"><img src="img/svg-burger.svg" alt="burger"></span>
           <a class="logo" href="#!">
            <img src="img/Logo.svg" width="225" height="72" alt="logo">
           </a>
-          <nav class="nav__header">
-            <ul class="nav__menu">
-              <li class="nav__item"><a class="nav__link" href="">О нас</a></li>
-              <li class="nav__item"><a class="nav__link" href="">Проекты</a></li>
-              <li class="nav__item"><a class="nav__link" href="">Этапы</a></li>
-              <li class="nav__item"><a class="nav__link" href="">Отзывы</a></li>
-              <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
-            </ul>
-            <button class="btn">
+          <div class="header__inner">
+            <nav class="nav__header">
+              <ul class="nav__menu">
+                <li class="nav__item"><a class="nav__link" href="">О нас</a></li>
+                <li class="nav__item"><a class="nav__link" href="">Проекты</a></li>
+                <li class="nav__item"><a class="nav__link" href="">Этапы</a></li>
+                <li class="nav__item"><a class="nav__link" href="">Отзывы</a></li>
+                <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
+              </ul>
+            </nav>
+            <button class="nav__btn btn">
               <svg class="header__btn" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none">
                 <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="#000"/>
                 <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#000" stroke-width="2"/>
               </svg>
             </button>
-          </nav>
+          </div>
       </div>
      </div>
    </div>
@@ -112,7 +115,7 @@
           <button class="btn btn__slider-2">Договор</button>
         </div>
         <div class="slider__wrap">
-          <img class="img__slider-1" src="img/slider_img-1.jpg" width="870" height="460" alt="Проводим консультацию">
+          <img class="img__slider-1" src="img/slider_img-1.jpg" alt="Проводим консультацию">
         </div>
       </div>
     </div>
@@ -120,20 +123,25 @@
   <section id="faq">
     <div class="container">
       <h2 class="faq__text">Часто задаваемые вопросы</h2>
-      <ul faq__quetions>
-        <li class="quetion"> Из чего формируется конечная стоимость проекта?
+      <ul class="quetions">
+        <li class="quetion">
+            Из чего формируется конечная стоимость проекта?
+            <span class="icon-pluse__quetion"></span>
+        </li>
+        <li class="quetion">
+           У меня есть свой проект. Сможем ли мы его доработать / реализовать?
           <span class="icon-pluse__quetion"></span>
         </li>
-        <li class="quetion"> У меня есть свой проект. Сможем ли мы его доработать / реализовать?
+        <li class="quetion">
+          Я выбираю между разными компаниями. В чём ваше отличие?
           <span class="icon-pluse__quetion"></span>
         </li>
-        <li class="quetion"> Я выбираю между разными компаниями. В чём ваше отличие?
+        <li class="quetion">
+          Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?
           <span class="icon-pluse__quetion"></span>
         </li>
-        <li class="quetion"> Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?
-          <span class="icon-pluse__quetion"></span>
-        </li>
-        <li class="quetion"> Могу ли я вернуть деньги на каком-либо из этапов работ?
+        <li class="quetion">
+          Могу ли я вернуть деньги на каком-либо из этапов работ?
           <span class="icon-pluse__quetion"></span>
         </li>
       </ul>
@@ -148,25 +156,25 @@
           <div class="footer__nav">
             <ul class="footer__nav-menu">
               <li class="footer__nav-item" href="">
-                <a class="footer__nav-link" href="">О нас</a>
+                <a class="footer__nav-link" href="#!">О нас</a>
               </li>
               <li class="footer__nav-item">
-                <a class="footer__nav-link" href="">Проекты</a>
+                <a class="footer__nav-link" href="#!">Проекты</a>
               </li>
               <li class="footer__nav-item">
-                <a class="footer__nav-link" href="">Отзывы</a>
+                <a class="footer__nav-link" href="#!">Отзывы</a>
               </li>
               <li class="footer__nav-item">
-                <a class="footer__nav-link" href="">Договор оферты</a>
+                <a class="footer__nav-link" href="#!">Договор оферты</a>
               </li>
               <li class="footer__nav-item">
-                <a class="footer__nav-link" href="">Договор подряда</a>
+                <a class="footer__nav-link" href="#!">Договор подряда</a>
               </li>
               <li class="footer__nav-item">
-                <a class="footer__nav-link" href="">Конфеденциальность</a>
+                <a class="footer__nav-link" href="#!">Конфеденциальность</a>
               </li>
               <li class="footer__nav-item">
-                <a class="footer__nav-link" href="">Партнёрское соглашение</a>
+                <a class="footer__nav-link" href="#!">Партнёрское соглашение</a>
               </li>
             </ul>
           </div>
@@ -184,7 +192,7 @@
             </a>
           </div>
         </div>
-        <form class="footer__form" action="https://jsonplaceholder.org/posts" method="post">
+        <form class="footer__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
           <label class="h1" for="name">Оставить заявку</label>
           <input class="name" type="text" name="name" id="name" placeholder="Фамилия, имя и отчество*">
           <input class="email" type="email" name="email" id="email" placeholder="Email*">
