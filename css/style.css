@@ -104,6 +104,7 @@ header{
   justify-content: space-between;
   align-items: center;
   height: 100px;
+  gap: 40px;
 }
 
 .burger{
@@ -232,6 +233,8 @@ header{
 
 .btn-hero{
   margin-left:  80px;
+  margin-bottom: 103px;
+
   padding: 25px 39px;
   background-color: #F90;
   border-radius: 16px;
@@ -296,7 +299,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   flex-basis: 100%;
   gap: 15px;
   padding: 50px;
@@ -353,7 +356,7 @@ header{
 
 .first__about{
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   padding: 15px 15px 15px 60px;
   min-height: 295px;
   align-items: center;
@@ -449,7 +452,7 @@ header{
 }
 
 .slider__wrap{
-
+  width: 48%;
 }
 
 .img__slider-1{
@@ -463,10 +466,18 @@ header{
 .btn__slider-1{
   padding: 19px 38px;
   margin-right: 32px;
+  margin-bottom: 16px;
   background-color: #F90;
   border-radius: 16px;
   color: #FFF;
   font-weight: 700;
+  transition: background-color .4s ease;
+}
+.btn__slider-1:hover{
+  background-color: #FFB84D;
+}
+.btn__slider-1:active{
+  background-color: #E1670E;
 }
 
 
@@ -475,6 +486,15 @@ header{
   color: black;
   border-radius: 16px;
   outline: 1px solid black;
+  transition: background-color .4s ease;
+}
+.btn__slider-2:hover{
+  background-color: #666;
+  color: white;
+}
+.btn__slider-2:active{
+  background-color: #000;
+  color: white;
 }
 
 /* ____FAQ_____ */
@@ -533,13 +553,14 @@ header{
   margin: 0;
   padding: 50px 75px;
   display: flex;
+  gap: 22px;
   justify-content: space-between;
   align-items: center;
 }
 
 .footer-links{
   width: 252px;
-  height: 494px;
+
 }
 
 .footer-logo{
@@ -650,6 +671,13 @@ header{
   color: #FFF;
   background-color: #F90;
   border-radius: 16px;
+  transition: .4s ease;
+}
+.btn__form:hover{
+  background-color: #FFB84D;
+}
+.btn__form:active{
+  background-color: #E1670E;
 }
 
 /* footer text */
@@ -750,7 +778,7 @@ header{
   }
 
   .slider__text p {
-    width: 460px;
+    /* width: 460px; */
     padding-bottom: 25px;
   }
 
@@ -788,4 +816,46 @@ header{
     height: 58px;
     width: 269px;
   }
+}
+
+
+@media (max-width: 768px){
+  .slider{
+    flex-direction: column-reverse;
+  }
+  .slider__wrap{
+    width: 100%;
+  }
+  .footer__container{
+    flex-direction: column-reverse;
+    align-items: normal;
+  }
+  .footer__nav{
+    display: none;
+  }
+  .footer__form{
+    margin-left: 0;
+  }
+  .hero h1{
+    font-size: 50px;
+    padding-top: 160px;
+    margin-left: 40px;
+    max-width: 588px;
+    line-height: normal;
+    margin-bottom: 16px;
+  }
+  .hero p {
+    max-width: 588px;
+    margin-left: 40px;
+    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: normal;
+  }
+  .shtora__text{
+    max-width: 366px;
+  }
+  .about__logo{
+    width: 114px;
+  }
+
 }
