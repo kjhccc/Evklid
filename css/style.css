@@ -520,25 +520,30 @@ header{
   line-height: 32px;
   border-top: 1px solid #CACACA;
 }
-.quetion:active > .icon-pluse__quetion{
+
+.icon-pluse__quetion:active{
   transform: rotateZ(45deg);
 }
-.quetion:focus > .icon-pluse__quetion{
+.quetion:hover > span,
+.quetion:active > span{
   transform: rotateZ(45deg);
 }
+
 .quetion:last-child {
   border-bottom: 1px solid #CACACA;
 }
 
 
 .icon-pluse__quetion{
-  display: inline-block;
-  cursor: pointer;
-  background-image: url(../img/icon-pluse.svg);
   width: 50px;
   height: 50px;
   flex-shrink: 0;
   transition: transform .2s ease-in;
+}
+
+.icon-pluse{
+  width: 50px;
+  height: 50px;
 }
 
 
@@ -560,7 +565,7 @@ header{
 }
 
 .footer-links{
-  width: 252px;
+  max-width: 250px;
 
 }
 
@@ -755,6 +760,7 @@ header{
     background-image: url(../img/worker.jpg);
     width: 100%;
     height: 640px;
+    margin-right: 0;
     margin-bottom: 34px;
   }
 
@@ -809,7 +815,8 @@ header{
   }
 
   .footer__form {
-    flex-basis: 544px;
+    width: 100%;
+    flex-basis: auto;
   }
 
   .btn__form {
@@ -829,12 +836,13 @@ header{
   }
   .footer__container{
     flex-direction: column-reverse;
-    align-items: normal;
+
   }
   .footer__nav{
     display: none;
   }
   .footer__form{
+
     margin-left: 0;
   }
   .hero h1{
@@ -859,7 +867,16 @@ header{
     width: 114px;
   }
 
+  .footer-links {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer__socials{
+    justify-content: space-between;
+  }
 }
+
 
 
 @media (max-width: 550px){
@@ -886,6 +903,7 @@ header{
   .shtora{
     flex-direction: column;
     padding: 15px;
+    /* display: none; */
   }
 
   .how__steps{
@@ -905,11 +923,16 @@ header{
     flex-direction: column;
     padding: 0;
     align-items: normal;
+    border: none;
   }
 
   .about__logo{
-    margin-left: 50px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
+  }
+
+  .first__text{
+    margin: 0;
   }
 
   .how__work h2{
@@ -920,6 +943,16 @@ header{
   .quetion{
     font-size: 14px;
     font-weight: 500;
+  }
+
+  .icon-pluse__quetion{
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon-pluse{
+    width: 30px;
+    height: 30px;
   }
 
   .btn__slider-1{
@@ -943,13 +976,41 @@ header{
 
 
 @media (max-width: 380px){
+
+  .text__about h2{
+    font-size: 24px;
+  }
+  .text__about p{
+
+  }
+
+  .hero{
+    text-align: center;
+  }
+
+
+  .hero h1{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin: 0;
+    font-size: 25px;
+    width: 100%;
+  }
+
+  .hero p{
+
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 0px;
+    padding-bottom: 6px;
+}
+
+
+
   .how__work h2{
     font-size: 24px;
   }
 
-  .hero h1{
-    padding-top: 60px;
-  }
 
   .faq__text{
     font-size: 30px;
@@ -957,7 +1018,8 @@ header{
 
   .btn-hero{
     font-size: 18px;
-    margin: 0 0px 10px 40px;
+    margin-top: 50px;
+    margin-left: 0;
   }
 
 }
@@ -971,19 +1033,6 @@ header{
   .btn__slider-2{
 
     width: 100%
-  }
-
-  .btn-hero{
-    font-size: 18px;
-    margin: 0 0px 10px 20px;
-  }
-
-  .hero p{
-    margin-left: 20px;
-  }
-
-  .hero h1{
-    margin-left: 20px;
   }
 }
 
