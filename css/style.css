@@ -346,6 +346,12 @@ header{
   border: 3px solid #E1670E;
 }
 
+.adaptive-text__shtora{
+  display: none;
+}
+.btn-adaptive-shtora{
+  display: none;
+}
 
 /* .about_img{
   width: 100%;
@@ -901,10 +907,35 @@ header{
   }
 
   .shtora{
-    flex-direction: column;
-    padding: 15px;
-    /* display: none; */
+
+    display: none;
   }
+
+  .adaptive-text__shtora{
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 2em;
+    font-weight: 400;
+  }
+  .btn-adaptive-shtora{
+    display: flex;
+    align-self: flex-start;
+    padding: 14px 44px;
+    border-radius: 8px;
+    border: 2px solid #F90;
+    margin-bottom: 24px;
+    color: #F90;
+    font-weight: 700;
+  }
+
+  /* .adaptive__shtora{
+    display: inline-block;
+    width: 74px;
+    padding: 12px 44px;
+    border-radius: 8px;
+    border: 2px solid #F90;
+} */
 
   .how__steps{
     justify-content: space-between;
@@ -966,6 +997,7 @@ header{
 
   .about_link{
     height: 350px;
+    margin-bottom: 8px;
   }
 
   .btn-hero{
@@ -980,21 +1012,23 @@ header{
   .text__about h2{
     font-size: 24px;
   }
-  .text__about p{
 
-  }
+
 
   .hero{
     text-align: center;
   }
 
+  .btn-hero {
+    margin: 0 0px 30px 15px;
+  }
 
   .hero h1{
-    padding-top: 60px;
-    padding-bottom: 30px;
-    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin: 0 auto;
     font-size: 25px;
-    width: 100%;
+    width: 95%;
   }
 
   .hero p{
@@ -1034,10 +1068,20 @@ header{
 
     width: 100%
   }
+
+  .hero h1{
+
+    /* max-width: 247px; */
+  }
 }
 
 @media (max-width:320px){
   .about__logo{
     width: 64px;
+  }
+
+  .h1{
+    margin-top: 19px;
+    font-size: 24px;
   }
 }
