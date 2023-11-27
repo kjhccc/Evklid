@@ -201,14 +201,26 @@ header{
 
 /* HERO__HEADER-------- */
 
-.hero{
-  background-image: url(../img/hero.jpg);
+/* .hero{
+
   background-position: center;
   background-repeat: no-repeat;
   max-width: 100%;
   min-height: 620px;
   background-size: cover;
   border-radius: 32px;
+} */
+
+
+.swiper{
+  max-width: 100%;
+  min-height: 620px;
+}
+
+.swiper-slide{
+  background-size: cover;
+  border-radius: 30px;
+  min-height: 620px;
 }
 
 .hero h1{
@@ -562,7 +574,7 @@ header{
 
 .footer__container{
   max-width: 1920px;
-  margin: 0;
+  margin: 0 auto;
   padding: 50px 75px;
   display: flex;
   gap: 22px;
@@ -1069,10 +1081,7 @@ header{
     width: 100%
   }
 
-  .hero h1{
 
-    /* max-width: 247px; */
-  }
 }
 
 @media (max-width:320px){
