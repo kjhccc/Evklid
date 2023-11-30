@@ -1,6 +1,9 @@
 window.addEventListener('DOMContentLoaded', function(){
   const swiper = new Swiper('.swiper', {
     // Optional parameters
+    autoplay: {
+      delay: 5000,
+    },
 
     loop: true,
 
@@ -10,5 +13,26 @@ window.addEventListener('DOMContentLoaded', function(){
 
     },
 
+  })
+
+
+  $( function() {
+    // var icons = {
+    //   header: "ui-icon-circle-arrow-e",
+    //   activeHeader: "ui-icon-circle-arrow-s"
+    // };
+    $( "#accordion" ).accordion({
+      collapsible: true,
+      icons: false,
+
+    });
+    $( "#toggle" ).button().on( "click", function() {
+      if ( $( "#accordion" ).accordion( "option", "icons" ) ) {
+        $( "#accordion" ).accordion( "option", "icons", null );
+      } else {
+        $( "#accordion" ).accordion( "option", "icons", icons );
+      }
+    });
   });
+
 })

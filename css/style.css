@@ -38,10 +38,6 @@
   padding: 0;
 }
 
-/* :focus {
-  outline: 0;
-} */
-
 h1,
 h2,
 h3,
@@ -201,15 +197,9 @@ header{
 
 /* HERO__HEADER-------- */
 
-/* .hero{
-
-  background-position: center;
-  background-repeat: no-repeat;
-  max-width: 100%;
-  min-height: 620px;
-  background-size: cover;
-  border-radius: 32px;
-} */
+.hero{
+  position: relative;
+}
 
 
 .swiper{
@@ -224,10 +214,11 @@ header{
 }
 
 .hero h1{
-  margin-bottom: 24px;
+  position: absolute;
+  z-index: 2;
+  top: 16%;
+  left: 4.5%;
   max-width: 837px;
-  padding-top: 100px;
-  margin-left: 80px;
   color: #FFF;
   font-size: 70px;
   line-height: 85px;
@@ -235,9 +226,12 @@ header{
 }
 
 .hero p{
+  position: absolute;
+  z-index: 2;
+  top: 47.5%;
+  left: 4.5%;
   max-width: 790px;
-  margin-left: 80px;
-  margin-bottom: 90px;
+
   color: #FFF;
   font-size: 24px;
   line-height: 29px;
@@ -245,12 +239,14 @@ header{
 }
 
 .btn-hero{
-  margin-left:  80px;
-  margin-bottom: 103px;
-
+  position: absolute;
+  z-index: 2;
+  top: 71%;
+  left: 4.5%;
   padding: 25px 39px;
   background-color: #F90;
   border-radius: 16px;
+  border: none;
   color: #FFF;
   font-size: 23px;
   font-weight: 700;
@@ -529,28 +525,35 @@ header{
 
 .quetion{
   display: flex;
-  cursor: pointer;
+
   align-items: center;
   justify-content: space-between;
   height: 112px;
-  font-size: 24px;
+
   font-weight: 700;
-  line-height: 32px;
+
   border-top: 1px solid #CACACA;
 }
 
 .icon-pluse__quetion:active{
   transform: rotateZ(45deg);
 }
-.quetion:hover > span,
+/* .quetion:hover > span,
 .quetion:active > span{
   transform: rotateZ(45deg);
-}
+} */
 
 .quetion:last-child {
   border-bottom: 1px solid #CACACA;
 }
 
+ .ui-state-active > span{
+  transform: rotateZ(45deg);
+ }
+
+ .ui-state-active > .last{
+  border-bottom: none;
+ }
 
 .icon-pluse__quetion{
   width: 50px;
@@ -753,7 +756,7 @@ header{
   }
 
   .hero{
-    background-image: url(../img/hero1024.jpg);
+    /* background-image: url(../img/hero1024.jpg); */
     min-height: 668px;
   }
 
