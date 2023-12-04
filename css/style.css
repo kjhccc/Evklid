@@ -440,8 +440,12 @@ header{
 }
 
 .slider{
+  display: none;
+  justify-content: space-between;
+}
+
+.slide-active{
   display: flex;
-  /* justify-content: space-between; */
 }
 
 .slider__text{
@@ -466,6 +470,7 @@ header{
   max-width: 758px;
 }
 
+
 .slider__wrap{
   width: 48%;
 }
@@ -478,10 +483,15 @@ header{
 
 }
 
+.buttons{
+  display: flex;
+  gap: 32px;
+}
+
 .btn__slider-1{
+
   padding: 19px 38px;
-  margin-right: 32px;
-  margin-bottom: 16px;
+
   background-color: #F90;
   border-radius: 16px;
   color: #FFF;
@@ -497,6 +507,8 @@ header{
 
 
 .btn__slider-2{
+
+  align-self: flex-end;
   padding: 19px 38px;
   color: black;
   border-radius: 16px;
@@ -750,7 +762,7 @@ header{
 
   .hero h1{
     font-size: 60px;
-    padding-top: 155px;
+
     line-height: 1.3em;
     margin-bottom: 11px;
   }
@@ -762,7 +774,7 @@ header{
 
   .hero p{
     max-width: 770px;
-    margin-left: 76px;
+    top: 360px;
     margin-bottom: 62px;
     font-size: 20px;
     line-height: 24px;
@@ -868,18 +880,20 @@ header{
   }
   .hero h1{
     font-size: 50px;
-    padding-top: 160px;
-    margin-left: 40px;
+
     max-width: 588px;
     line-height: normal;
     margin-bottom: 16px;
+    text-align: center;
   }
   .hero p {
-    max-width: 588px;
-    margin-left: 40px;
-    margin-bottom: 60px;
+    text-align: center;
+    margin: 0;
     font-size: 18px;
     line-height: normal;
+  }
+  .btn-hero{
+    left: 25%;
   }
   .shtora__text{
     max-width: 366px;
@@ -906,7 +920,7 @@ header{
   }
 
   .hero h1{
-    font-size: 36px;
+    font-size: 50px;
 
   }
 
@@ -917,8 +931,11 @@ header{
 
   .hero p{
     max-width: 350px;
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 30px;
+    text-align: center;
+    margin: 0 ;
+    left: 25%;
   }
 
   .shtora{
@@ -1017,7 +1034,7 @@ header{
 
   .btn-hero{
 
-    margin: 0 0px 59px 40px;
+    top: 78%;
   }
 }
 

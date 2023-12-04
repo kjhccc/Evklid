@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Evklid</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="swiper-bundle.min.js"></script>
+
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  <script src="index.js"></script>
+
   <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -137,20 +137,20 @@
         <h2>Как мы работаем</h2>
         <ul class="how__steps">
           <li class="step-one step">
-            <button class="btn active-step">1 Шаг</button>
+            <button data-path="one" class="btn btn-step active-step">1 Шаг</button>
           </li>
           <li class="step-two step">
-            <button class="btn">2 Шаг</button>
+            <button data-path="two" class="btn btn-step">2 Шаг</button>
           </li>
           <li class="step-three step">
-            <button class="btn">3 Шаг</button>
+            <button data-path="three" class="btn btn-step">3 Шаг</button>
           </li>
           <li class="step-four step">
-            <button class="btn">4 Шаг</button>
+            <button data-path="four" class="btn btn-step">4 Шаг</button>
           </li>
         </ul>
       </div>
-      <div class="slider">
+      <div data-target="one" class="slider slide-active">
         <div class="slider__text">
           <h3>Проводим консультацию</h3>
           <p>
@@ -164,11 +164,59 @@
             Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные
             особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, призваны к&nbsp;ответу.
           </p>
-          <button class="btn btn__slider-1">Подробнее</button>
-          <button class="btn btn__slider-2">Договор</button>
+          <div class="buttons">
+            <button class="btn btn__slider-1">Подробнее</button>
+            <button class="btn btn__slider-2">Договор</button>
+          </div>
         </div>
         <div class="slider__wrap">
           <img class="img__slider-1" src="img/slider_img-1.jpg" alt="Проводим консультацию">
+        </div>
+      </div>
+      <div data-target="two" class="slider">
+        <div class="slider__text">
+          <h3>Привлекаем подрядчиков</h3>
+          <p>
+            Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.
+          </p>
+          <div class="buttons">
+            <button class="btn btn__slider-1">Подробнее</button>
+            <button class="btn btn__slider-2">Договор</button>
+          </div>
+        </div>
+        <div class="slider__wrap">
+          <img class="img__slider-1" src="img/slider_img-2.jpg" alt="Проводим консультацию">
+        </div>
+      </div>
+      <div data-target="three" class="slider">
+        <div class="slider__text">
+          <h3>Инспектируем все этапы работ</h3>
+          <p>
+            Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит
+            о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.
+          </p>
+          <div class="buttons">
+            <button class="btn btn__slider-1">Подробнее</button>
+            <button class="btn btn__slider-2">Договор</button>
+          </div>
+        </div>
+        <div class="slider__wrap">
+          <img class="img__slider-1" src="img/slider_img-3.jpg" alt="Проводим консультацию">
+        </div>
+      </div>
+      <div data-target="four" class="slider">
+        <div class="slider__text">
+          <h3>Составляем смету</h3>
+          <p>
+            Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.
+          </p>
+          <div class="buttons">
+            <button class="btn btn__slider-1">Подробнее</button>
+            <button class="btn btn__slider-2">Договор</button>
+          </div>
+        </div>
+        <div class="slider__wrap">
+          <img class="img__slider-1" src="img/slider_img-4.jpg" alt="Проводим консультацию">
         </div>
       </div>
     </div>
@@ -339,6 +387,8 @@
     </div>
 
   </footer>
+<script src="index.js"></script>
+<script src="tabs.js"></script>
 </body>
 
 </html>
