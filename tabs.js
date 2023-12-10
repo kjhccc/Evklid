@@ -8,7 +8,6 @@ window.addEventListener('DOMContentLoaded', function(){
 
       document.querySelectorAll('.slider').forEach(function(slide){
         slide.classList.remove('slide-active')
-
       })
 
       document.querySelector(`[data-target='${path}']`).classList.add('slide-active')
