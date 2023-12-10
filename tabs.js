@@ -10,7 +10,12 @@ window.addEventListener('DOMContentLoaded', function(){
         slide.classList.remove('slide-active')
       })
 
+      document.querySelectorAll('.btn-step').forEach(function(btnActive){
+        btnActive.classList.remove('active-step')
+      })
+
       document.querySelector(`[data-target='${path}']`).classList.add('slide-active')
+      document.querySelector(`[data-path='${path}']`).classList.add('active-step')
     })
   })
 
